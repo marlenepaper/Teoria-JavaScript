@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 200px;
+            margin:30px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+       // Array de 2 dimensiones:
+        //1. Se hace n de 1 dimension:
+        var temperatura_madrid=new Array(3)
+        temperatura_madrid[0]="Madrid"
+        temperatura_madrid[1]=12
+        temperatura_madrid[2]=10
+        temperatura_madrid[3]=11
+
+        var temperatura_barcelona=new Array(3)
+        temperatura_barcelona[0]="Barcelona"
+        temperatura_barcelona[1]=20
+        temperatura_barcelona[2]=21
+        temperatura_barcelona[3]=23
+
+        var temperatura_cuenca=new Array(3)
+        temperatura_cuenca[0]="Cuenca"
+        temperatura_cuenca[1]=30
+        temperatura_cuenca[2]=33
+        temperatura_cuenca[3]=39
+
+        //2. Se hace un array de 1 dimension incluyendo estos 3 que se hicieron:
+
+        var temperaturas_espana=new Array (3)
+        temperaturas_espana[0]=temperatura_madrid
+        temperaturas_espana[1]=temperatura_barcelona
+        temperaturas_espana[2]=temperatura_cuenca
+
+
+        document.write("<table width=200 border=1 cellpadding=1 cellspacing=1");
+        for(i=0;i<temperaturas_espana.length;i++){
+            document.write("<tr>")
+            document.write("<td><b>Ciudad"+i+"</b></td>")
+            for (j=0;j<temperaturas_espana[i].length;j++){
+                document.write("<td>"+temperaturas_espana[i][j]+"</td>")
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+
+/*         console.table(temperaturas_espana) */
+
+//Foreach es solo para arrays y no es un bucle si no un metodo que sirve para iterar
+    
+    </script>
+</body>
+</html>

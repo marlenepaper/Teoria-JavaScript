@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var miArray=new Array(3)
+        
+        miArray[0]=290
+        miArray[1]="p"
+        miArray[2]=true
+
+        for(i=0;i<3;i++){
+            document.write("Posición " + i + " del array " + miArray[i])
+            document.write("<br>")
+        }
+
+        var arrayRapido=[12,45,"array inicializando en su declaracion"]
+        document.write(arrayRapido.length)
+
+        for(i=0;i<miArray.length;i++){
+            document.write(miArray[i]+"<br>")
+        }
+
+        var miArray=new Array(2)
+
+        miArray[0]="Madrid"
+        miArray[1]="A coruña"
+        miArray[2]="tenerife"
+
+        for(i=0;i<miArray.length;i++){
+            document.write("Position"+i+"del array:"+miArray[i]+"<br>")
+
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>

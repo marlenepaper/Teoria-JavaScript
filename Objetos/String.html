@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var varString = "Marlene"
+        var miString=1233
+
+        //Devuelve el caracter que hay en la posicion indicada como índice
+        //Las posiciones empiezan en 0
+        document.write(varString.charAt(0)+"<br><br>")
+
+        /* Devuelve la posicion de la primera vez que aparece el caracter indicado
+        de izquierda a derecha, si no (-1)
+        (caracter,desde) **Desde es opcional */
+        document.write(varString.indexOf('e')+"<br>")
+
+        /* Devuelve la posicion de la primera vez que aparece el caracter indicado
+        de derecha a izquierda, si no (-1)
+        (caracter,desde) **Desde es opcional */ 
+        document.write(varString.lastIndexOf('e')+"<br><br>")
+
+
+        document.write(varString.replace("lene","itza")+"<br>")
+        document.write(varString.split("")+"<br>")
+        document.write(varString.substring(3)+"<br><br>")
+
+        document.write(varString.toLocaleLowerCase()+"<br>")
+        document.write(varString.toUpperCase()+"<br><br>")
+
+        document.write(miString.toString()+"<br><br>") //Convierte de numero a cadena
+
+        document.write(varString.big()+"<br>")//Aumenta el tamaño de la letra
+        document.write(varString.small()+"<br>") //Disminuye el tañamo
+        document.write(varString.blink()+"<br><br>") //Las letras parpadean, solo vale para netscape
+        
+        document.write(varString.bold()+"<br>")
+        document.write(varString.fixed()+"<br>")//Fuente monoespaciada
+        document.write(varString.fontcolor("orange")+"<br>")
+        document.write(varString.fontsize(50)+"<br>")
+        document.write(varString.strike()+"<br>")
+        document.write(varString.italics()+"<br><br>")
+
+        document.write(varString.sub()+"<br>")
+        document.write(varString.sup()+"<br><br>")
+
+
+        document.write(varString.link()+"<br>")
+        document.write(varString.anchor()+"<br><br>") //Convierte en un link
+        
+        
+        var miString="HolaAmigos"
+        var result= ""
+
+        for (i=0;i<miString.length-1;i++){
+            result+=miString.charAt(i)
+            result+="-"
+        }
+       
+
+        result += miString.charAt(miString.length-1)
+
+        document.write(result)
+
+        document.write("<br><br>")
+
+        var miString="2313434243"
+        var mitad1,mitad2
+
+        posicion_mitad=miString.length/2
+
+        mitad1=miString.substring(0,posicion_mitad)
+        mitad2=miString.substring(posicion_mitad,miString.length)
+        document.write(mitad1+"<br>"+mitad2)
+
+
+    </script>
+</body>
+</html>

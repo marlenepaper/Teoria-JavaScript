@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var miString="2+6"
+        var imprimir=eval(miString)
+        document.write(imprimir+"<br>")
+
+        let cadenaOriginal = "¡Hola, mundo! ¿Cómo estás?";
+        let cadenaCodificada = escape(cadenaOriginal);
+        document.write(cadenaCodificada+"<br>"); // Imprime "%A1Hola%2C%20mundo%21%20%BFC%C3%B3mo%20est%C3%A1s%3F"
+
+        let cadenaCodificada2 = "%A1Hola%2C%20mundo%21%20%BFC%C3%B3mo%20est%C3%A1s%3F";
+        let cadenaDecodificada = unescape(cadenaCodificada);
+        document.write(cadenaDecodificada+"<br>"); // Imprime "¡Hola, mundo! ¿Cómo estás?"
+
+
+        //Parse int hace la conversion de texto a numero
+        // de binario,octal y hexagonal a numero
+
+        document.write(parseInt("34")+"<br>"); 
+        document.write(parseInt("101011",2)+"<br>"); 
+        document.write(parseInt("3F",16)+"<br>"); 
+        document.write(parseInt("34",8)+"<br>"); 
+        document.write(parseInt("3.38")+"<br>"); 
+
+        //NAN
+
+        document.write(parseInt("hola")+"<br>");
+
+        miInteger=parseInt("a3.6")
+        document.write(isNaN(miInteger))
+
+        miInteger=parseInt("3.6")
+        document.write(isNaN(miInteger))
+
+        //true= is not a number (NAN)
+        //false= regresa el numero
+
+    </script>
+</body>
+</html>

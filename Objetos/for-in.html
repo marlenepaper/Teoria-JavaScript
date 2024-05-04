@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //El for...in the permite recorrer todas las propiedades de un objeto.
+
+        //Este ejemplo solo accede a las propiedades:
+        var diasMes={
+            enero:31,
+            febrero:28,
+            marzo:31,
+            abril:30,
+            mayo:31
+        }
+
+        for (var mes in diasMes){
+            document.write(mes + "<br>")
+        }
+
+        //Para acceder a los valores se hace de la siguiente manera:
+
+        document.write(diasMes["mayo"]);
+        document.write("<br> <br>")
+
+        for (var diaMes in diasMes){
+            document.write(diasMes[diaMes]+"<br>");
+        }
+
+        //Propiedad + valor:
+
+        for (var mes in diasMes){
+            document.write("El mes de " + mes + " tiene " + diasMes[mes]+" dias.<br>");
+        }
+
+
+
+       
+    </script>
+</body>
+</html>

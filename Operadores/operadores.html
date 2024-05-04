@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <script>
+
+        //Define diferentes variables con los siguientes tipos de datos:
+
+        // 1. No. entero y no. flotante:
+
+        var entero=56
+        var flotante=33.5
+        var suma=entero+flotante
+        document.write(suma + "<br>")
+        console.log(suma);
+
+
+        var sumando1=123
+        var sumando2="abc"
+        var sumaNumeroCadena=sumando1+sumando2
+        document.write(sumaNumeroCadena+ "<br>")
+     
+
+        // 2. Cadena Texto
+
+        var cadenaTexto="Hola, ¿Cómo estás"
+        var caracter='?'
+        document.write (cadenaTexto,caracter+ "<br>")
+
+        cadenaTexto="Adiós"
+        var caracter='!'
+        document.write (cadenaTexto,caracter+ "<br>")
+
+        // 3. Boolean
+
+        var revisado=true
+        document.write (revisado+ "<br>")
+
+        revisado="no" // Aqui puede cambiar de tipo
+        document.write (revisado+ "<br>")
+
+        // 4. Arreglos
+
+        var arreglo 
+
+    
+        //Operadores aritmeticos
+
+        // Suma (+),  resta (-), multiplicacion (*), division (/), incremento (++), decremento (--), resto (%)
+
+        precio=2
+        unidades=10
+        factura=precio*unidades
+        precioPorUnidad=factura/10
+        precio++
+        document.write(precioPorUnidad+ "<br>")
+        document.write(precio+ "<br>")
+
+        //Operadores de asignacion
+
+        // Suma (+=),  resta (-=), multiplicacion (*=), division (/=), resto (%=) 
+
+        ahorros=5
+        ahorros += 5
+        document.write(ahorros+ "<br>")
+        ahorros /=2
+        document.write(ahorros+ "<br>")
+
+        //Operadores de cadenas
+
+        cadena1="hola"
+        cadena2="mundo"
+        concatenada=cadena1+cadena2
+        document.write(concatenada+ "<br>")
+
+        //Operadores logicos
+
+        // No (!):Si era true pasa a false y viceversa
+        //Y (&): Si los dos son verdaderos vale verdadero
+        //O (||): Si al menos uno vale verdadero es verdadero
+
+        miBoleano=true
+        miBoleano=!miBoleano
+        document.write(miBoleano+ "<br>")
+
+        tengoHambre=true
+        tengoComida=true
+        comoComida=tengoHambre&&tengoComida
+        document.write(comoComida+ "<br>")
+
+        tengoHambre2=false
+        tengoComida2=true
+        comoComida2=tengoHambre2||tengoComida2
+        document.write(comoComida2+ "<br>")
+
+        // Operadores condicionales
+
+        // Comprueba si son iguales (==), si son distintos (!=), menor (<), mayor (>), menor igual (<=), mayor igual (>=)
+
+        numero1 = 2
+        numero2=2
+        comprobacion = 2 == 2
+        document.write(comprobacion+ "<br>")
+
+        numero1=2
+        numero2=2
+        comprobacion=2!=2
+        document.write(comprobacion+ "<br>")
+
+        numero1=2
+        numero2=2
+        comprobacion=2>2
+        document.write(comprobacion+ "<br>")
+
+        numero1=2
+        numero2=2
+        comprobacion=2>=2
+        document.write(comprobacion+ "<br>")
+
+        //Control de tipos (type of: devuelve un texto que indica que operador estamos usando)
+
+        var soyMarlene=true
+        document.write("<br>Tipo dato:" + typeof soyMarlene)
+        
+    </script>
+</body>
+</html>

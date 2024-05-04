@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+
+        El valor del objeto Number que se crea depende de lo que reciba el constructor
+        de la clase Number. Con las siguientes reglas:
+
+        1. Si el constructor recibe un número, entonces el objeto con el número que recibe.
+        Si recibe un numero entrecomillado lo convierte q valor numerico, devolviendo también dicho número.
+
+        2. Devuelve 0 en caso de que no reciba nada.
+
+        3. En caso de que reciba un valor no numerico devuelve NaN
+
+        4. Si recibe false se inicia a O y si recibe true se inicializa a 1
+        
+        */
+
+        var n1= new Number()
+        document.write(n1+"<br>")
+
+        var n2= new Number("hola")
+        document.write(n2+"<br>")
+
+        var n3= new Number("123")
+        document.write(n3+"<br>")
+
+        var n4= new Number("123hola")
+        document.write(n4+"<br>")
+
+        var n5= new Number(123213)
+        document.write(n5+"<br>")
+
+        var n6= new Number(false)
+        document.write(n6+"<br>")
+
+        var n7= new Number(true)
+        document.write(n7+"<br>")
+
+        /* Propiedades:
+
+        NAN
+        MAX_VALUE
+        MIN_VALUE
+        NEGATIVE_INFINITY
+        NEGATIVE_INFINITY
+ */
+
+        document.write("Propiedad:"+Number.NaN+"<br>")
+        document.write("Propiedad:"+Number.MAX_VALUE+"<br>")
+        document.write("Propiedad:"+Number.MIN_VALUE+"<br>")
+        document.write("Propiedad:"+Number.NEGATIVE_INFINITY+"<br>")
+        document.write("Propiedad:"+Number.POSITIVE_INFINITY+"<br>")
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    
+        // while: cuando queremos repetir la ejecucion de unas sentencias un numero indefinido de veces, siempre que se cumpla una condicion.
+        
+        var color =""
+        while (color !="rojo") {
+            color=prompt("dame un color (escribe rojo para salir)","")
+        }
+
+        // do while: se utiliza cuando generalmente no sabemos cuantas veces se va a ejecutar el bucle
+
+        var color
+        do{
+            color=prompt("hola,dame un color(rojo es para salir)","s")
+        } while (color != "rojo")
+
+        var suma=0
+        while (suma<10){
+            suma+=parseInt(Math.random()*100) //parse int lo converte en entero ya que en math random puede haber decimales y la suma es para hacer el rango de 1-100
+            document.write (suma +"<br>")
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //if
+
+        var llueve=false
+
+        if (llueve){
+            alert("Cae agua")
+        } else {
+            alert("seco")
+        }
+
+        var dia="lunes"
+
+        if (dia=="lunes")
+        document.write("Buen lunes")
+
+        var credito=2
+        var precio=1
+        var nuevoArticulo="bici"
+        var carrito=""
+
+
+        if (credito>=precio){
+            document.write("<br>Haz comprado el articulo: "+nuevoArticulo)
+            carrito+=nuevoArticulo
+            credito-=precio
+            document.write("<br>Tu credito es de:"+ credito)
+            document.write("<br>Carrito:"+ carrito)
+            
+        }else{
+            document.write("sin credito")
+            window.location="Ejercicio-1.html"
+        }
+
+        var bateria=0.1
+        var redElectrica=0
+
+        if(bateria<0.5 && redElectrica ==0)
+        document.write("<br>Tu ordenador se va apagar en segundos")
+
+        var numero1=23
+        var numero2=63
+        if(numero1==numero2){
+            document.write("<br>Los dos números son iguales")
+        } else {
+            if (numero1> numero2){
+                document.write("<br>El primer número es mayor que el segundo")
+            } else {
+                document.write("<br>El segundo número es mayor que el primero")
+            }
+        }
+
+        //Operando if
+
+        hora_actual=13
+        //                           si es positiva 13>12   si es negativa 13!>12
+        momento = (hora_actual>12)? "Antes del mediodia" : "Después del mediodía"
+        document.write("<br>" + momento)
+    </script>
+</body>
+</html>

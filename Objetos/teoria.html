@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*      
+        Los Objetos estan compuestos de:
+
+            -Propiedades=datos
+            -Metodos=Funcionalidad
+
+        Para acceder a las propiedades y metodos se hace de la siguiente manera:
+
+            miObjeto.miPropiedad 
+
+            miObjeto.miMetodo()
+
+            miObjeto.miMetodo(parametro1,parametro2)
+
+            
+        Para crear objetos se hace de la siguiente manera:
+
+            {
+                nombre:'Marlene Padilla'
+                sitioWeb: 'DesarrolloWeb.com'
+            }
+        
+        Literales:
+
+        Crear objeto con literales:
+            
+            var dimensiones={
+                altura:34,
+                anchura:455
+            }
+
+            var dimensiones={
+                altura:34,
+                anchura:455
+                area:function(){
+                    return this.altura*this.anchura;
+                }
+            }
+
+            **Dentro del código de tus metodos puedes acceder a las propiedades del objeto a través de la variables this.
+
+
+        Una vez creado ese objeto, puedes usar la notación (.) para acceder a sus propiedades o métodos:
+
+             dimensiones.altura=90 // accede a la propiedad altura y le asigna el valor 90
+
+
+        En Js no existen las clases por lo que se crean instancias de objetos a partir de funciones especiales llamadas constructores.
+        Los constructores son el molde para construir objetos de la clase Persona: 
+
+            function AlumnoUniversitario(nombre,edad){
+                this.nombre=nombre
+                this.edad=edad
+                this.numMatricula=null // se asigna null porque no se recibe ese valor hasta que no se matricula 
+                this.matriculate=matriculate
+                this.imprimete=imprimete
+
+            }
+
+        Para escribir metodos debemos crear funciones:
+
+            function matriculate(num_matricula){
+                this.numMatricula=num_matricula
+            }
+
+            function imprimete(){
+                document.write("Nombre"+this.nombre)
+                document.write("<br>Edad:"+this.edad)
+                document.write("<br>Numero matricula:"+this.numMatricula)
+            }
+        
+        Instanciar un objeto es crear un ejemplar de una clase, para poder trabajar con él luego.
+        En js para crear un objeto a partir de una funcion se utiliza la instruccion new:
+        
+            miAlumno = new AlumnoUniversitario ('Marlene Padilla',31)
+        
+        Para trabajar con objetos se debe seguir la siguiente secuencia:
+            1. Crear los metodos
+            2. Crear el constructor
+            3. Instancias
+*/
+    
+            function matriculate(num_matricula){
+                this.numMatricula=num_matricula
+            }
+
+            function imprimete(){
+                document.write("<br><br>Nombre"+this.nombre)
+                document.write("<br>Edad:"+this.edad)
+                document.write("<br>Numero matricula:"+this.numMatricula)
+            }
+
+            function AlumnoUniversitario(nombre,edad){ //Las clases se escriben la primera en mayuscula
+                this.nombre=nombre
+                this.edad=edad
+                this.numMatricula=null // se asigna null porque no se recibe ese valor hasta que no se matricula 
+                this.matriculate=matriculate
+                this.imprimete=imprimete
+
+            }
+
+            miAlumno = new AlumnoUniversitario ('Marlene Padilla',31)
+
+            miAlumno.imprimete()
+            miAlumno.matriculate(304)
+            miAlumno.imprimete()
+        
+
+
+
+
+
+
+        
+        
+ 
+    </script>
+</body>
+</html>

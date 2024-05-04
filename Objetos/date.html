@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //hoy()
+
+        miFecha= new Date()
+
+        //Otro dia
+        miFecha = new Date ( 2024,4,3)
+        var miFecha = new Date(1992, 11, 29, 16, 13, 10);
+        // Los meses en Js empiezan desde cero por lo que mes-1
+        
+        document.write(miFecha.setDate(30))
+        document.write(miFecha.setMonth(0))
+        document.write(miFecha.setYear(1988))
+        document.write(miFecha.setFullYear(1998))
+
+        document.write("Retorna el dia: "+ miFecha.getDate()+"<br>")
+        document.write("Retorna el dia de la semana ej. Martes: "+ miFecha.getDay()+"<br>") 
+        /* El número 0 representa el domingo.
+        El número 1 representa el lunes.
+        El número 2 representa el martes.
+        El número 3 representa el miércoles.
+        El número 4 representa el jueves.
+        El número 5 representa el viernes.
+        El número 6 representa el sábado. */
+
+        document.write("Retorna el mes:"+(miFecha.getMonth()+1) +"<br>")
+        document.write("Retorna el año: "+miFecha.getYear()+"<br>") //Para fechas entre 1900 y 1999.
+        document.write("Retorna el año completo:"+miFecha.getFullYear()+"<br> <br>")
+
+     
+
+        /* miFecha.setTime() */
+        miFecha.setHours(16)
+        miFecha.setMinutes(50)
+        miFecha.setSeconds(45) 
+
+        document.write(miFecha)
+
+        //Devuelve los milisegundo transcurridos entre el 1 enero 1970 y la fecha correspondiente al objeto que se le pasa el mensaje
+        document.write(miFecha.getTime()+"<br>")
+
+        document.write("Retorna la hora: "+ miFecha.getHours()+"<br>")
+        document.write("Retorna los minutos: "+miFecha.getMinutes()+"<br>")
+        document.write("Retorna los segundos: "+miFecha.getSeconds()+"<br>")
+
+
+    </script>
+</body>
+</html>

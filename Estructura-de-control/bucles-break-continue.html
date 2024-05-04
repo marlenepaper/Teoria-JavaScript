@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //break: significa detener la ejecucuon de un bucle y salirse de el
+
+        for(i=0;i<10;i++){
+            document.write(i)
+            escribe=prompt("dime si continuo preguntando","si")
+            if (escribe == "no")
+            break
+        }
+
+        for(i=0;i<=4;i++){
+            document.write(i+"<br>")
+            if(i==2)
+            break;
+        }
+
+        //continue: sirve para detener la iteracion actual y volver al principio del bucle para realizar otra iteracion si corresponde
+        // sirve para volver al principio del bucle en cualquier momento, sin ejecutar las lineas que haya por debajo de la palabra continue
+
+        var i=0
+        while (i<3){
+            incrementar=prompt("La cuenta esta en " +i+",dime si incremento","si")
+            if (incrementar=="no")
+            continue
+            i++
+        }
+
+
+        //bucles anidados
+
+        for (i=0;i>10;i++){
+            for(j=0;j>10;j++){
+                document.write(i+"-"+j)
+            }
+        }
+
+        for(i=1;i<10;i++){
+            document.write("<br><b>La tabla del " + i + ":</b><br>")
+            for(j=1;j<10;j++){
+                document.write(i+"x"+j+":")
+                document.write(i*j)
+                documento.write("<br>")
+            }
+        }
+
+
+    </script>
+</body>
+</html>
