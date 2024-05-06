@@ -1,0 +1,18 @@
+En JavaScript, var y let son palabras clave utilizadas para declarar variables, 
+pero tienen diferencias clave en cuanto a su alcance y comportamiento.
+
+var 
+tiene un alcance de función. 
+Esto significa que una variable declarada con var estará disponible en todo el contexto de la función en la que se declara, 
+incluso antes de su declaración. Sin embargo, no estará disponible fuera de la función.
+
+
+
+let, por otro lado, tiene un alcance de bloque. 
+Esto significa que una variable declarada con let estará disponible solo dentro del bloque donde se declara (por ejemplo, 
+dentro de un bucle for, un if, o una función), y no estará disponible antes de su declaración.
+Además, con var, puedes redeclarar una variable dentro del mismo ámbito sin lanzar un error. 
+Además, puedes reasignar valores a una variable tantas veces como desees.
+
+Con let, no puedes redeclarar una variable en el mismo ámbito. Intentar redeclarar una variable con let lanzará un error. 
+Sin embargo, puedes reasignar valores a una variable declarada con let.

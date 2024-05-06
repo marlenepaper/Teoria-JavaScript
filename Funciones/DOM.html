@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* El objeto window = ventana del navegador que tenemos abierta. 
+           El objeto document= documento HTML en sí, por lo que será la raíz de nuestro árbol. */
+
+        document.getElementById().textContent  //Cuando cambias el valor del texto o lo quieres obtener 
+        document.getElementById().innerHTML // Lo mismo que text content pero este puede contener elementos html como <br>
+        document.getElementById().value // para obtener el valor 
+
+
+        getElementsByTagName()//Nos devolverá una lista con todos los elementos cuyo tag name sea igual al que hayamos pasado como parámetro.
+        getElementsByClassName()//Nos devolverá un array con los elementos que tengan la clase especificada en el parámetro.
+        element.childNodes// Permite acceder a los nodos hijos de un elemento.
+        getAttribute()//Devuelve el valor del atributo especificado
+
+    /*  Para crear nuevos elementos HTML con DOM, lo que se debe hacer es crear el nodo o tag, guardar un contenido en éste y añadirlo al árbol de la página:
+        document.createElement(elemento): Crea un elemento HTML.
+        document.createTextNode(String): Crea un nodo de tipo texto.
+        appendChild(): Agrega un elemento HTML a un nodo.
+        document.write(text): Escribe un texto dentro de la página HTML. Hay que tener cuidado porque reescribe todo el documento HTML. */
+
+
+    </script>
+</body>
+</html>
