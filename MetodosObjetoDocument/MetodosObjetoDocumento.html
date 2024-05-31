@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /* Métodos de Selección de Elementos*/
+
+                getElementById(id) /* Selecciona un elemento por su atributo id. */
+
+                getElementsByClassName(className); /* Selecciona todos los elementos que tienen una clase específica. Ejemplo:  */
+                document.getElementsByClassName('miClase');
+
+
+                getElementsByTagName(tagName); /* Selecciona todos los elementos que tienen un nombre de etiqueta específico. Ejemplo:  */
+                document.getElementsByTagName('div');
+
+                querySelector(selector); /* Selecciona el primer elemento que coincide con el selector CSS. Ejemplo: */ 
+                document.querySelector('.miClase');
+
+                querySelectorAll(selector); /* Selecciona todos los elementos que coinciden con el selector CSS. Ejemplo: */ 
+                document.querySelectorAll('.miClase');
+
+
+        /* Métodos de Creación y Modificación de Elementos */
+
+                createElement(tagName); /* Crea un nuevo elemento HTML. Ejemplo:  */
+                var nuevoDiv = document.createElement('div');
+
+                createTextNode(text); /* Crea un nuevo nodo de texto. Ejemplo: */ 
+                var texto = document.createTextNode('Hola Mundo');
+
+                appendChild(node); /* Añade un nuevo nodo al final de la lista de hijos de un elemento. Ejemplo: */ 
+                document.body.appendChild(nuevoDiv);
+
+                removeChild(node);/*  Elimina un nodo hijo de un elemento. Ejemplo: */ 
+                document.body.removeChild(nuevoDiv);
+
+                replaceChild(newNode, oldNode); /* Reemplaza un nodo hijo por otro nodo. Ejemplo: */ 
+                document.body.replaceChild(nuevoDiv, viejoDiv);
+
+                insertBefore(newNode, referenceNode); /* Inserta un nuevo nodo antes de un nodo de referencia. Ejemplo: */ 
+                document.body.insertBefore(nuevoDiv, nodoExistente);
+
+
+        /* Métodos de Información del Documento */
+                write(string); /* Escribe una cadena de texto en el documento en la posición actual. Ejemplo: */ 
+                document.write('Hola Mundo')
+                getElementsByName(name); /* Devuelve una colección de elementos con un nombre específico. Ejemplo: */ 
+                document.getElementsByName('miNombre')
+
+        /* Métodos de Eventos */
+                addEventListener(event, function); /* Añade un controlador de eventos a un elemento. Ejemplo: */ 
+                document.addEventListener('click', miFuncion)
+
+                removeEventListener(event, function); /* Elimina un controlador de eventos de un elemento. Ejemplo:  */
+                document.removeEventListener('click', miFuncion)
+
+        /* Otros Métodos Útiles */
+                createDocumentFragment(); /* Crea un fragmento de documento que puede contener nodos y ser insertado en el DOM. Ejemplo: */ 
+                var fragmento = document.createDocumentFragment()
+
+                importNode(node, deep); /* Importa un nodo desde otro documento. Ejemplo:  */
+                var nuevoNodo = document.importNode(nodo, true)
+                
+                normalize(); /* Combina nodos de texto adyacentes y elimina nodos vacíos en el documento. Ejemplo: */ 
+                document.normalize()
+ 
+
+    </script>
+
+</body>
+</html>
