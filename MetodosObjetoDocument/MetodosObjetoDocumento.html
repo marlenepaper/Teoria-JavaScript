@@ -49,26 +49,26 @@
 
         /* Métodos de Información del Documento */
                 write(string); /* Escribe una cadena de texto en el documento en la posición actual. Ejemplo: */ 
-                document.write('Hola Mundo')
+                document.write('Hola Mundo');
                 getElementsByName(name); /* Devuelve una colección de elementos con un nombre específico. Ejemplo: */ 
-                document.getElementsByName('miNombre')
+                document.getElementsByName('miNombre');
 
         /* Métodos de Eventos */
-                addEventListener(event, function); /* Añade un controlador de eventos a un elemento. Ejemplo: */ 
-                document.addEventListener('click', miFuncion)
+                /* addEventListener(event, function); */ /* Añade un controlador de eventos a un elemento. Ejemplo: */ 
+                document.addEventListener('click', miFuncion);
 
-                removeEventListener(event, function); /* Elimina un controlador de eventos de un elemento. Ejemplo:  */
-                document.removeEventListener('click', miFuncion)
+                /* removeEventListener(event, function); */ /* Elimina un controlador de eventos de un elemento. Ejemplo:  */
+                document.removeEventListener('click', miFuncion);
 
         /* Otros Métodos Útiles */
                 createDocumentFragment(); /* Crea un fragmento de documento que puede contener nodos y ser insertado en el DOM. Ejemplo: */ 
-                var fragmento = document.createDocumentFragment()
+                var fragmento = document.createDocumentFragment();
 
                 importNode(node, deep); /* Importa un nodo desde otro documento. Ejemplo:  */
-                var nuevoNodo = document.importNode(nodo, true)
+                var nuevoNodo = document.importNode(nodo, true);
                 
                 normalize(); /* Combina nodos de texto adyacentes y elimina nodos vacíos en el documento. Ejemplo: */ 
-                document.normalize()
+                document.normalize();
  
 
     </script>
